@@ -10,7 +10,7 @@ struct Card
     string cardId;
 };
 
-struct Card Deck[52];
+Card Deck[52];
 
 char Suits[4]{'C', 'D', 'H', 'S'};
 char Ranks[13]{'2', '3', '4', '5', '6', '7', '8', '9', 'X', 'J', 'Q', 'K', 'A'};
@@ -50,7 +50,7 @@ int main()
   
     buildDeck();
     for (int i = 0; i < 52; i++) {
-        cout << Deck[i].cardId;
+        cout << Deck[i].cardId+"\n";
     }
     
 

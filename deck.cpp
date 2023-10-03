@@ -6,6 +6,7 @@ Deck::Deck()
 }
 
 Deck::Card Deck::genCard(char dSuit, char dRank)
+// Generates a card
 {
     Card newCard;
     newCard.suit = dSuit;

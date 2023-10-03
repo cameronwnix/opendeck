@@ -6,7 +6,10 @@ Deck::Deck()
 }
 
 Deck::Card Deck::genCard(char dSuit, char dRank)
-// Generates a card
+// Generates a card with a rank (2 thru Ace) represented by a single character (10 is represented by an X)
+// and suit also represented by a single character (the first letter of the suit name).
+// Together, the rank and suit respectively for the cardId, a two-character string representing the card.
+// For instance, the Ace of Spades is represented as "AS" and a Five of Clubs is "5C"
 {
     Card newCard;
     newCard.suit = dSuit;
@@ -17,6 +20,8 @@ Deck::Card Deck::genCard(char dSuit, char dRank)
 }
 
 void Deck::buildDeck()
+// Builds the deck as an array by iterating through the Suits and Ranks arrays and feeding the values 
+// to genCard(), the generated card goes into the newDeck[]. ADD: Shuffle the deck after it has been generated.
 {
     char suit;
     char rank;

@@ -7,7 +7,10 @@ using namespace std;
 int main()
 {
   
-    Deck Deck1;
+    Deck Deck1; // Instantiate our Deck.
+
+    // Starting to build out the shuffling algorithm below:
+    
 
     // Iterates through the filled newDeck[] and prints the CardId of each Card. For testing and verification.
     for (int i = 0; i < 52; i++) {
@@ -17,4 +20,5 @@ int main()
     // This is my emotional support string.
    string myString{"This is a string"};
    cout << myString;
+
 }

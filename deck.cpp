@@ -1,6 +1,7 @@
 #include "deck.h"
 
 Deck::Deck()
+// Constructor. Calls buildDeck() when the class is instantiated to... build the deck.
 {
     buildDeck();
 }
@@ -21,7 +22,7 @@ Deck::Card Deck::genCard(char dSuit, char dRank)
 
 void Deck::buildDeck()
 // Builds the deck as an array by iterating through the Suits and Ranks arrays and feeding the values 
-// to genCard(), the generated card goes into the newDeck[]. ADD: Shuffle the deck after it has been generated.
+// to genCard(), the generated card goes into the newDeck[]. Called when Deck is instantiated. ADD: Shuffle the deck after it has been generated. 
 {
     char suit;
     char rank;

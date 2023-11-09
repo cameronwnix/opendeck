@@ -1,0 +1,38 @@
+Notes from watching the first YouTube video in my search results for "shuffling a deck of cards like a dealer":
+
+Physical instructions:
+
+1. Wash:
+	Spread the cards out face-down on the table. Using your the whole palm of both hands simultaneously, move the cards around in overlapping circular motions. Each 
+	card's face should touch the surface of the table at least once. Should last about 7 seconds.
+
+2. Gather:
+	After a wash, gather the cards into a pile with no more than one card in a layer. Place the topmost card at the bottom of the pile.
+
+3. Riffle(x2):
+	Split the deck roughly in half. Interlace the cards (combine each half by placing the cards between the cards of the other half).
+
+4. Box:
+	Take the top 20-30% of the deck and place it at the bottom until the original bottom 20-30% is at the top.
+
+5. Riffle
+	
+
+Programmatic flow/explanations/thoughts:
+
+1. Wash:
+	To be honest, I'm not sure how to represent this as part of the shuffling sequence. In practice, you're taking the cards and placing them in one or two layers on	the table and then sliding them around so they "randomly" slide over/under one another. This achieves statistical randommness after approximately one minute. I'm	not sure it's a necessary step here but I might try to figure out a way to represent this later on. OPTIONAL.
+
+2. Gather: 
+	Placing the top card (beginning of array) at the bottom of the deck shouldn't be hard. I'm just not sure there's all that much of a point if they haven't been
+	washed first. I'll probably figure this one out later since that is the case. (OPTIONAL)
+
+3. Riffle(x2):
+	Take the top 45-55% of the newDeck and place it into a separate array hereby referred to as rifflePart. Separate each remaining card in newDeck by one array 	address. Insert each card from rifflePart into the newly-created vacant addresses in newDeck.
+
+4. Box:
+	Take the top 20-30% of newDeck (the first 20-30% of the array) and place it at the bottom (end of the array) until no less than 20% of the deck remains.
+
+5. Riffle:
+	Once more with feeling.
+	 

@@ -21,14 +21,17 @@ Physical instructions:
 Programmatic flow/explanations/thoughts:
 
 1. Wash:
-	To be honest, I'm not sure how to represent this as part of the shuffling sequence. In practice, you're taking the cards and placing them in one or two layers on	the table and then sliding them around so they "randomly" slide over/under one another. This achieves statistical randommness after approximately one minute. I'm	not sure it's a necessary step here but I might try to figure out a way to represent this later on. OPTIONAL.
+	To be honest, I'm not sure how to represent this as part of the shuffling sequence. In practice, you're taking the cards and placing them in one or two layers on 
+	the table and then sliding them around so they "randomly" slide over/under one another. This achieves statistical randommness after approximately one minute. 
+	I'm	not sure it's a necessary step here but I might try to figure out a way to represent this later on. OPTIONAL.
 
 2. Gather: 
 	Placing the top card (beginning of array) at the bottom of the deck shouldn't be hard. I'm just not sure there's all that much of a point if they haven't been
 	washed first. I'll probably figure this one out later since that is the case. (OPTIONAL)
 
 3. Riffle(x2):
-	Take the top 45-55% of the newDeck and place it into a separate array hereby referred to as rifflePart. Separate each remaining card in newDeck by one array 	address. Insert each card from rifflePart into the newly-created vacant addresses in newDeck.
+	Take the top 45-55% of the newDeck and place it into a separate array hereby referred to as rifflePart. Separate each remaining card in newDeck by one array 	
+	address. Insert each card from rifflePart into the newly-created vacant addresses in newDeck.
 
 4. Box:
 	Take the top 20-30% of newDeck (the first 20-30% of the array) and place it at the bottom (end of the array) until no less than 20% of the deck remains.

@@ -23,14 +23,19 @@ int main()
         
     }
 
-    cout << partSize;
+    cout << partSize + "\n";
 
     // Iterates through the filled newDeck[] and prints the CardId of each Card. For testing and verification.
-    /*
+
+    cout << "These are the cards in this Deck:\n";
     for (int i = 0; i < 52; i++) {
         cout << Deck1.newDeck[i].cardId+"\n";
     }
-    */
+
+    cout << "These are the cards in this rifflePart:\n";
+    for (int i = 0; i < partSize; i++) {
+        cout << rifflePart[i].cardId+"\n";
+    }
 
 
 
